@@ -1,4 +1,16 @@
-table tr:hover td {
-    background-color: #4288ca !important;
+h1, h2, h3 {
+    color: #4288ca;
+}
+table tr:hover td, table tr:hover td h2 {
+    background-color: #4288ca;
     color: white;
+}
+table tr:hover a {
+    color: white;
+}
+a {
+    color: #111;
+}
+a:hover {
+    text-decoration: none;
 }

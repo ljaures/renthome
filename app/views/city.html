@@ -1,18 +1,19 @@
-<ol class="breadcrumb">
-  <li><a href="#/{{city}}">{{city | ucfirst}}</a></li>
-</ol>
-
-<h2>Page d'accueil des locations de {{city | ucfirst}}</h2>
+<h3>Les meublés</h3>
 
 <div class="container">
-    <table class="table stripped table-hover">
-        <tr ng-repeat="home in filteredHomes" class="col-md-12">
-            <td>
-                <img ng-src="images/{{home.image}}" style="width:290px" />
+    <table class="table">
+        <tr ng-repeat="(key, home) in homes" class="col-md-12">
+            <td style="width:30%;max-width:300px">
+                <a href="#/appart/{{key}}">
+                    <img ng-src="images/{{home.image}}" style="width:100%" />
+                </a>
             </td>
             <td>
-                <h2>{{home.title}}</h2>
-                <p>{{home.comment}}</p>
+                <a ng-href="#/appart/{{key}}">
+                    <h2>{{home.title}}</h2>
+                    <p>{{home.comment}}</p>
+                    <p>Ville : {{home.city}}</p>
+                </a>
             </td>
         </tr>
     </table>

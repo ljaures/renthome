@@ -21,13 +21,10 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html'
-      })
-      .when('/:city', {
         templateUrl: 'views/city.html',
         controller: 'CityCtrl'
       })
-      .when('/:city/appart/:id', {
+      .when('/appart/:id', {
         templateUrl: 'views/appart.html',
         controller: 'AppartCtrl'
       })

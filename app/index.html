@@ -39,12 +39,6 @@
           <div class="navbar-collapse collapse" ng-controller="AuthCtrl">
 
             <ul class="nav navbar-nav">
-              <li ng-class="{active: isActive('/palavas')}">
-                <a ng-href="#/palavas">Locations saisonnières meublées à Palavas-les-Flots</a>
-              </li>
-              <li ng-class="{active: isActive('/montpellier')}">
-                <a ng-href="#/montpellier">Locations meublées à Montpellier</a>
-              </li>
               <li ng-show="undefined == user.id" class="dropdown">
                 <a class="dropdown-toggle" href="" data-toggle="dropdown">Login</a>
                 <div class="dropdown-menu" style="padding:17px;">
